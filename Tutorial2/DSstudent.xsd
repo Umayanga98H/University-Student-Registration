@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSstudent" targetNamespace="http://tempuri.org/DSstudent.xsd" xmlns:mstns="http://tempuri.org/DSstudent.xsd" xmlns="http://tempuri.org/DSstudent.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSstudent" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSstudent" msprop:Generator_DataSetName="DSstudent">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Student" msprop:Generator_TableClassName="StudentDataTable" msprop:Generator_TableVarName="tableStudent" msprop:Generator_TablePropName="Student" msprop:Generator_RowDeletingName="StudentRowDeleting" msprop:Generator_RowChangingName="StudentRowChanging" msprop:Generator_RowEvHandlerName="StudentRowChangeEventHandler" msprop:Generator_RowDeletedName="StudentRowDeleted" msprop:Generator_UserTableName="Student" msprop:Generator_RowChangedName="StudentRowChanged" msprop:Generator_RowEvArgName="StudentRowChangeEvent" msprop:Generator_RowClassName="StudentRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StuID" msprop:Generator_ColumnVarNameInTable="columnStuID" msprop:Generator_ColumnPropNameInRow="StuID" msprop:Generator_ColumnPropNameInTable="StuIDColumn" msprop:Generator_UserColumnName="StuID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fname" msprop:Generator_ColumnVarNameInTable="columnFname" msprop:Generator_ColumnPropNameInRow="Fname" msprop:Generator_ColumnPropNameInTable="FnameColumn" msprop:Generator_UserColumnName="Fname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Lname" msprop:Generator_ColumnVarNameInTable="columnLname" msprop:Generator_ColumnPropNameInRow="Lname" msprop:Generator_ColumnPropNameInTable="LnameColumn" msprop:Generator_UserColumnName="Lname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Major" msprop:Generator_ColumnVarNameInTable="columnMajor" msprop:Generator_ColumnPropNameInRow="Major" msprop:Generator_ColumnPropNameInTable="MajorColumn" msprop:Generator_UserColumnName="Major">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Student" />
+      <xs:field xpath="mstns:StuID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
